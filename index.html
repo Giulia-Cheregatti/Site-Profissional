@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Giulia Cheregatti - Desenvolvedora Full Stack, criadora de soluções web eficientes e criativas. Confira meu portfólio de projetos e entre em contato.">
+    <meta name="keywords" content="Desenvolvedora, Full Stack, Front-end, Back-end, Portfólio, Web Development, JavaScript, HTML, CSS">
+    <meta name="author" content="Giulia Cheregatti">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Giulia Cheregatti - Desenvolvedora Full Stack</title>
+</head>
+
+<body>
+    <nav class="menu" role="navigation">
+        <button class="sysMode" id="toggle-mode" aria-label="Toggle light and dark mode">
+            <i class="fa-regular fa-sun" aria-hidden="true"></i>
+            <i class="fa-solid fa-moon" aria-hidden="true"></i>
+            <div class="indicator" aria-hidden="true"></div>
+        </button>
+
+        <div class="menu-icon" onclick="toggleMenu()" aria-label="Abrir menu de navegação">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </div>
+
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobreMim">Sobre Mim</a></li>
+            <li><a href="#portifolio">Portfólio</a></li>
+            <li><a href="#contatos">Contatos</a></li>
+        </ul>
+    </nav>
+
+    <section class="inicio" id="inicio" aria-labelledby="hello-world">
+        <div class="txtInicio">
+            <h3 id="hello-world">Hello world!</h3>
+            <h1>Me chamo Giulia Cheregatti</h1>
+            <h2>Sou desenvolvedora Full Stack</h2>
+        </div>
+        <img src="Foto Giulia.jpg" alt="Foto de Giulia Cheregatti, desenvolvedora Full Stack" class="foto-perfil">
+    </section>
+
+    <section class="sobreMim" id="sobreMim" aria-labelledby="sobre-mim-title">
+        <div class="container">
+            <h2 id="sobre-mim-title">Sobre Mim</h2>
+            <p>Sou uma programadora full stack com sólida experiência no desenvolvimento de soluções web e automações, acumulando 1 ano de atuação profissional na área. Durante minha jornada, trabalhei com uma ampla gama de tecnologias, criando interfaces interativas, sistemas eficientes de back-end e otimizando processos através da automação de tarefas, com foco na melhora da produtividade.</p>
+            <p>Atualmente, estou cursando o 8º período de Engenharia da Computação, o que tem me permitido consolidar ainda mais minhas habilidades técnicas e aprofundar meu conhecimento em áreas como banco de dados, cibersegurança, redes de computadores e automação de sistemas. Além disso, sou certificada pela Cisco, com cursos em Redes de Computadores, Introdução à Cibersegurança e CCNA 1, o que me dá uma visão abrangente sobre a infraestrutura de redes e proteção de sistemas.</p>
+            <p>Minha experiência prática, aliada ao conhecimento acadêmico e às certificações, me proporciona uma abordagem completa na resolução de problemas complexos, desde a arquitetura de sistemas até a segurança da informação. Estou sempre em busca de oportunidades para aplicar minhas habilidades, seja em projetos de desenvolvimento full stack, automação ou na melhoria da segurança e eficiência de sistemas de rede.</p>
+        </div>
+    </section>
+
+    <section class="portifolio" id="portifolio" aria-labelledby="portifolio-title">
+        <h1 id="portifolio-title">Projetos</h1>
+        <div class="centralizacao">
+            <button class="arrowleft" onclick="moveSlide(-1)" aria-label="Anterior">
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+            </button>
+            <div class="card-container">
+                <article class="card active">
+                    <img src="capa task list.png" alt="Capa do projeto Task List" class="capaTaskList">
+                    <h3>Task List - Aplicação de Gerenciamento de Tarefas</h3>
+                    <p>O Task List é uma aplicação web para organizar e gerenciar tarefas, desenvolvida com HTML, CSS e JavaScript puro, focando em usabilidade e performance. Permite adicionar, marcar como concluídas, e remover tarefas, com armazenamento local no navegador.</p>
+                    <div class="tech-icons" aria-label="Tecnologias usadas no projeto Task List">
+                        <i class="fa-brands fa-html5" aria-hidden="true"></i>
+                        <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+                        <i class="fa-brands fa-js" aria-hidden="true"></i>
+                    </div>
+                    <div class="btnSite">
+                        <a href="https://github.com/Giulia-Cheregatti/Task-List" target="_blank" class="btn" aria-label="Ver código no GitHub">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://giulia-cheregatti.github.io/Task-List/" target="_blank" class="btn" aria-label="Abrir site">
+                            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="capa jogo da velha.png" alt="Capa do projeto Jogo da Velha" class="capaJodoDaVelha">
+                    <h3>Jogo da Velha</h3>
+                    <p>O projeto "Jogo da Velha" desenvolvido é uma versão interativa do clássico jogo, construído utilizando as tecnologias web básicas: HTML, CSS e JavaScript. Este projeto demonstra habilidades fundamentais de desenvolvimento front-end, combinando interatividade e design responsivo.</p>
+                    <div class="tech-icons" aria-label="Tecnologias usadas no projeto Jogo da Velha">
+                        <i class="fa-brands fa-html5" aria-hidden="true"></i>
+                        <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+                        <i class="fa-brands fa-js" aria-hidden="true"></i>
+                    </div>
+                    <div class="btnSite">
+                        <a href="https://github.com/Giulia-Cheregatti/JogoDaVelha" target="_blank" class="btn" aria-label="Ver código no GitHub">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://giulia-cheregatti.github.io/JogoDaVelha/" target="_blank" class="btn" aria-label="Abrir site">
+                            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <button class="arrowright" onclick="moveSlide(1)" aria-label="Próximo">
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </button>
+        </div>
+    </section>
+
+    <section class="contatos" id="contatos" aria-labelledby="contatos-title">
+        <div class="containerContatos">
+            <h2 id="contatos-title">Contatos</h2>
+            <div class="button-container">
+                <button onclick="window.open('https://www.linkedin.com/in/giulia-cheregatti-019480214/', '_blank')" aria-label="Abrir LinkedIn">LinkedIn</button>
+                <button onclick="window.open('https://github.com/Giulia-Cheregatti', '_blank')" aria-label="Abrir GitHub">GitHub</button>
+                <button onclick="window.open('https://www.instagram.com/_giulia.dev/', '_blank')" aria-label="Abrir Instagram">Instagram</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="txtFooter">
+            <p>&copy; 2024 Giulia Cheregatti</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
